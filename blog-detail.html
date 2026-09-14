@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detail artikel: How to Deploy a Web Application Using Docker and NGINX on Your Own Server">
+  <meta name="author" content="Eliza Novita T. Rajagukguk">
+  <title>Blog Detail - How to Deploy a Web Application Using Docker and NGINX</title>
+</head>
+<body>
+
+  <!-- ===== Navigasi antar halaman project ===== -->
+  <nav>
+    <a href="index.html">IMDb Top 3 Movies</a> &nbsp;|&nbsp;
+    <a href="blog.html">Dev Blogs</a> &nbsp;|&nbsp;
+    <a href="form.html">Form Pendaftaran</a> &nbsp;|&nbsp;
+    <a href="cv.html">CV</a>
+  </nav>
+
+  <hr>
+
+  <!-- ===== Banner & info penulis ===== -->
+  <header>
+    <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fk8sq4oiy0stnozjd1xgs.png" width="100%" alt="Ilustrasi cover Docker dan NGINX">
+
+    <table border="0" cellpadding="4" cellspacing="0">
+      <tbody>
+        <tr>
+          <td valign="middle"><img src="vishnuSatheesh.png" width="32" height="32" alt="Foto profil Vishnu Satheesh"></td>
+          <td valign="middle">
+            <span><b>Vishnu Satheesh</b></span>&nbsp;&nbsp;
+            <span>Posted on Jun 1, 2025</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+
+  <!-- ===== Judul, tag & isi artikel ===== -->
+  <main>
+    <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+    <p>
+      <span>#docker</span>&nbsp;&nbsp;
+      <span>#webdev</span>&nbsp;&nbsp;
+      <span>#programming</span>&nbsp;&nbsp;
+      <span>#devops</span>
+    </p>
+
+    <hr>
+
+    <article>
+      <p>Artikel ini menjelaskan cara men-deploy aplikasi web ke server sendiri (VPS) menggunakan Docker untuk containerization dan NGINX sebagai reverse proxy, khusus untuk server berbasis Linux.</p>
+
+      <p>
+        <b>Langkah 1: Menyiapkan Docker</b><br>
+        Contoh yang dipakai adalah aplikasi React sederhana. Dibuat sebuah Dockerfile di direktori project untuk mendefinisikan bagaimana aplikasi akan di-containerize, mulai dari base image node, instalasi dependency, sampai perintah menjalankan aplikasi.
+      </p>
+
+      <p>
+        <b>Langkah 2: Build dan Jalankan Container</b><br>
+        Docker image di-build lalu diberi tag, kemudian container dijalankan dalam mode detached dengan port di server dipetakan ke port di dalam container, sehingga aplikasi bisa diakses lewat alamat IP server pada port tersebut.
+      </p>
+
+      <p>
+        <b>Langkah 3: Menyiapkan NGINX</b><br>
+        NGINX dipasang untuk menerima request yang masuk dan meneruskannya ke aplikasi yang berjalan di dalam container. File konfigurasi NGINX umumnya berada di direktori <code>/etc/nginx</code>, dengan konfigurasi utama di <code>nginx.conf</code> dan konfigurasi per-situs disimpan di <code>sites-available</code> lalu diaktifkan lewat symbolic link di <code>sites-enabled</code>.
+      </p>
+
+      <p>
+        Dibuat file konfigurasi baru untuk aplikasi, berisi aturan agar NGINX meneruskan (proxy) request dari domain ke port lokal tempat aplikasi berjalan. Bila ingin mengaktifkan HTTPS, konfigurasi ditambah untuk mengalihkan semua request HTTP ke HTTPS dan mengarahkan ke sertifikat SSL yang digunakan.
+      </p>
+
+      <p>
+        <b>Langkah 4: Mengaktifkan Konfigurasi</b><br>
+        Konfigurasi yang sudah dibuat diaktifkan dengan membuat symbolic link dari folder <code>sites-available</code> ke <code>sites-enabled</code>.
+      </p>
+
+      <p>
+        <b>Langkah 5: Menguji dan Merestart NGINX</b><br>
+        Sebelum diterapkan, konfigurasi NGINX perlu diuji dulu untuk memastikan tidak ada kesalahan penulisan. Jika pengujian berhasil, NGINX di-restart agar perubahan konfigurasi berlaku, dan aplikasi pun bisa diakses lewat domain yang telah diatur.
+      </p>
+
+      <p>
+        <b>Kesimpulan</b><br>
+        Men-deploy aplikasi web dengan Docker dan NGINX di server sendiri terlihat rumit pada awalnya, tapi jadi cukup mudah dikelola setelah dipecah langkah demi langkah. Dengan meng-containerize aplikasi, menjadikan NGINX sebagai reverse proxy, dan menghubungkan semuanya di VPS, kita mendapat kendali penuh atas proses deployment.
+      </p>
+    </article>
+
+    <hr>
+
+    <!-- ===== Komentar ===== -->
+    <h2>Top comments (6)</h2>
+    <table border="0" cellpadding="4" cellspacing="0">
+      <tbody>
+        <tr>
+          <td valign="top"><img src="FotoKu.png" width="32" height="32" alt="Foto profil Anda"></td>
+          <td valign="top"><textarea rows="3" cols="40" placeholder="Add to the discussion"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>
