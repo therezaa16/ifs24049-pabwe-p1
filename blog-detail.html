@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Detail artikel: How to Deploy a Web Application Using Docker and NGINX on Your Own Server">
+  <meta name="description" content="Detail artikel Dev Blogs: LTX-Video-0.9.7, AI vs pengembang software, dan Docker & NGINX">
   <meta name="author" content="Eliza Novita T. Rajagukguk">
-  <title>Blog Detail - How to Deploy a Web Application Using Docker and NGINX</title>
+  <title>Blog Detail - Dev Blogs</title>
 </head>
 <body>
 
@@ -20,50 +20,152 @@
 
   <hr>
 
-  <!-- ===== Banner & info penulis ===== -->
-  <header>
-    <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fk8sq4oiy0stnozjd1xgs.png" width="100%" alt="Ilustrasi cover Docker dan NGINX">
-
-    <table border="0" cellpadding="4" cellspacing="0">
-      <tbody>
-        <tr>
-          <td valign="middle"><img src="vishnuSatheesh.png" width="32" height="32" alt="Foto profil Vishnu Satheesh"></td>
-          <td valign="middle">
-            <span><b>Vishnu Satheesh</b></span>&nbsp;&nbsp;
-            <span>Posted on Jun 1, 2025</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </header>
-
-  <!-- ===== Judul, tag & isi artikel ===== -->
   <main>
-    <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
-    <p>
-      <span>#docker</span>&nbsp;&nbsp;
-      <span>#webdev</span>&nbsp;&nbsp;
-      <span>#programming</span>&nbsp;&nbsp;
-      <span>#devops</span>
-    </p>
+
+    <!-- ===== Artikel 1: LTX-Video-0.9.7 ===== -->
+    <article id="ltx-video">
+      <header>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td><img src="aimodels-fyi.png" width="32" height="32" alt="Foto profil aimodels-fyi"></td>
+              <td>
+                <span><b>aimodels-fyi</b></span>&nbsp;&nbsp;
+                <span>Posted on Jun 1, 2025</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </header>
+
+      <h1>A beginner's guide to the Ltx-Video-0.9.7 model by Lightricks on Replicate</h1>
+      <p>
+        <span>#coding</span>&nbsp;&nbsp;
+        <span>#ai</span>&nbsp;&nbsp;
+        <span>#machinelearning</span>&nbsp;&nbsp;
+        <span>#programming</span>
+      </p>
+
+      <hr>
+
+      <p>Ltx-Video-0.9.7 adalah model text-to-video dan image-to-video buatan Lightricks yang tersedia di platform Replicate. Model ini dikenal karena kecepatan generasinya yang jauh lebih tinggi dibanding model video generatif lain, sehingga cocok dipakai untuk eksperimen cepat oleh pemula sekalipun.</p>
+
+      <p>
+        <b>Langkah 1: Menyiapkan akun dan API</b><br />
+        Buat akun di Replicate, lalu ambil API token dari halaman pengaturan akun. Token ini nantinya dipakai untuk memanggil model lewat API atau melalui library resmi.
+      </p>
+
+      <p>
+        <b>Langkah 2: Memilih mode input</b><br />
+        Ltx-Video-0.9.7 mendukung dua mode utama, yaitu text-to-video (video dihasilkan dari deskripsi teks/prompt) dan image-to-video (video dihasilkan dari satu gambar sebagai frame awal).
+      </p>
+
+      <p>
+        <b>Langkah 3: Mengatur parameter</b><br />
+        Parameter umum yang bisa diatur antara lain panjang video, resolusi, frame rate, dan tingkat kepatuhan hasil terhadap prompt. Semakin tinggi resolusi dan durasi, semakin lama waktu pemrosesan yang dibutuhkan.
+      </p>
+
+      <p>
+        <b>Langkah 4: Menjalankan dan mengunduh hasil</b><br />
+        Setelah proses generasi selesai, hasil video dapat diunduh langsung dari dashboard Replicate atau diambil melalui response API dalam bentuk tautan file.
+      </p>
+
+      <p>
+        <b>Kesimpulan</b><br />
+        Bagi pemula, Ltx-Video-0.9.7 menjadi pilihan yang ramah untuk mulai bereksperimen dengan AI video generation karena prosesnya relatif cepat dan tidak memerlukan perangkat keras khusus di sisi pengguna.
+      </p>
+    </article>
 
     <hr>
 
-    <article>
+    <!-- ===== Artikel 2: AI vs Software Developer ===== -->
+    <article id="ai-coding">
+      <header>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td><img src="SylwiaLaskowska.png" width="32" height="32" alt="Foto profil Sylwia Laskowska"></td>
+              <td>
+                <span><b>Sylwia Laskowska</b></span>&nbsp;&nbsp;
+                <span>Posted on Sep 10</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </header>
+
+      <h1>AI Is Already Better at Coding Than Most Software Developers</h1>
+      <p>
+        <span>#discuss</span>&nbsp;&nbsp;
+        <span>#ai</span>&nbsp;&nbsp;
+        <span>#webdev</span>&nbsp;&nbsp;
+        <span>#programming</span>
+      </p>
+
+      <hr>
+
+      <p>Artikel ini membahas fenomena semakin banyaknya AI coding assistant yang mampu menulis, memperbaiki, bahkan merefactor kode dengan kualitas yang sebanding, kadang lebih cepat, dibanding sebagian besar programmer pada tugas-tugas umum sehari-hari.</p>
+
+      <p>
+        <b>Argumen pendukung</b><br />
+        AI coding assistant unggul dalam kecepatan menulis boilerplate, menghafal sintaks berbagai bahasa dan framework sekaligus, serta konsisten mengikuti pola kode yang sudah ada di dalam satu project.
+      </p>
+
+      <p>
+        <b>Argumen penyeimbang</b><br />
+        Di sisi lain, AI masih terbatas dalam memahami konteks bisnis yang kompleks, mengambil keputusan arsitektur jangka panjang, serta bertanggung jawab atas dampak dari kode yang dihasilkan, tiga hal yang sampai saat ini masih memerlukan penilaian manusia.
+      </p>
+
+      <p>
+        <b>Kesimpulan</b><br />
+        Diskusi di komunitas developer umumnya sepakat bahwa AI lebih tepat diposisikan sebagai alat bantu yang mempercepat pekerjaan rutin, bukan pengganti penuh peran programmer, terutama untuk pekerjaan yang membutuhkan pemahaman konteks dan tanggung jawab keputusan.
+      </p>
+    </article>
+
+    <hr>
+
+    <!-- ===== Artikel 3: Docker & NGINX ===== -->
+    <article id="docker-nginx">
+      <header>
+        <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fk8sq4oiy0stnozjd1xgs.png" width="1000" height="420" alt="Ilustrasi cover Docker dan NGINX">
+
+        <table border="0">
+          <tbody>
+            <tr>
+              <td><img src="vishnuSatheesh.png" width="32" height="32" alt="Foto profil Vishnu Satheesh"></td>
+              <td>
+                <span><b>Vishnu Satheesh</b></span>&nbsp;&nbsp;
+                <span>Posted on Jun 1, 2025</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </header>
+
+      <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+      <p>
+        <span>#docker</span>&nbsp;&nbsp;
+        <span>#webdev</span>&nbsp;&nbsp;
+        <span>#programming</span>&nbsp;&nbsp;
+        <span>#devops</span>
+      </p>
+
+      <hr>
+
       <p>Artikel ini menjelaskan cara men-deploy aplikasi web ke server sendiri (VPS) menggunakan Docker untuk containerization dan NGINX sebagai reverse proxy, khusus untuk server berbasis Linux.</p>
 
       <p>
-        <b>Langkah 1: Menyiapkan Docker</b><br>
+        <b>Langkah 1: Menyiapkan Docker</b><br />
         Contoh yang dipakai adalah aplikasi React sederhana. Dibuat sebuah Dockerfile di direktori project untuk mendefinisikan bagaimana aplikasi akan di-containerize, mulai dari base image node, instalasi dependency, sampai perintah menjalankan aplikasi.
       </p>
 
       <p>
-        <b>Langkah 2: Build dan Jalankan Container</b><br>
+        <b>Langkah 2: Build dan Jalankan Container</b><br />
         Docker image di-build lalu diberi tag, kemudian container dijalankan dalam mode detached dengan port di server dipetakan ke port di dalam container, sehingga aplikasi bisa diakses lewat alamat IP server pada port tersebut.
       </p>
 
       <p>
-        <b>Langkah 3: Menyiapkan NGINX</b><br>
+        <b>Langkah 3: Menyiapkan NGINX</b><br />
         NGINX dipasang untuk menerima request yang masuk dan meneruskannya ke aplikasi yang berjalan di dalam container. File konfigurasi NGINX umumnya berada di direktori <code>/etc/nginx</code>, dengan konfigurasi utama di <code>nginx.conf</code> dan konfigurasi per-situs disimpan di <code>sites-available</code> lalu diaktifkan lewat symbolic link di <code>sites-enabled</code>.
       </p>
 
@@ -72,17 +174,17 @@
       </p>
 
       <p>
-        <b>Langkah 4: Mengaktifkan Konfigurasi</b><br>
+        <b>Langkah 4: Mengaktifkan Konfigurasi</b><br />
         Konfigurasi yang sudah dibuat diaktifkan dengan membuat symbolic link dari folder <code>sites-available</code> ke <code>sites-enabled</code>.
       </p>
 
       <p>
-        <b>Langkah 5: Menguji dan Merestart NGINX</b><br>
+        <b>Langkah 5: Menguji dan Merestart NGINX</b><br />
         Sebelum diterapkan, konfigurasi NGINX perlu diuji dulu untuk memastikan tidak ada kesalahan penulisan. Jika pengujian berhasil, NGINX di-restart agar perubahan konfigurasi berlaku, dan aplikasi pun bisa diakses lewat domain yang telah diatur.
       </p>
 
       <p>
-        <b>Kesimpulan</b><br>
+        <b>Kesimpulan</b><br />
         Men-deploy aplikasi web dengan Docker dan NGINX di server sendiri terlihat rumit pada awalnya, tapi jadi cukup mudah dikelola setelah dipecah langkah demi langkah. Dengan meng-containerize aplikasi, menjadikan NGINX sebagai reverse proxy, dan menghubungkan semuanya di VPS, kita mendapat kendali penuh atas proses deployment.
       </p>
     </article>
@@ -91,17 +193,18 @@
 
     <!-- ===== Komentar ===== -->
     <h2>Top comments (6)</h2>
-    <table border="0" cellpadding="4" cellspacing="0">
+    <table border="0">
       <tbody>
         <tr>
-          <td valign="top"><img src="FotoKu.png" width="32" height="32" alt="Foto profil Anda"></td>
-          <td valign="top">
-            <label for="comment-field">Tambahkan komentar</label><br>
-            <textarea id="comment-field" rows="3" cols="40" placeholder="Add to the discussion"></textarea>
+          <td><img src="FotoKu.png" width="32" height="32" alt="Foto profil Anda"></td>
+          <td>
+            <label for="komentar">Tambahkan komentar</label><br />
+            <textarea id="komentar" name="komentar" rows="3" cols="40" placeholder="Add to the discussion"></textarea>
           </td>
         </tr>
       </tbody>
     </table>
+
   </main>
 
 </body>
